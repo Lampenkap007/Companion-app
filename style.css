@@ -5,6 +5,11 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
 .header {
   width: 100vw;
   height: 75px;
@@ -14,6 +19,7 @@
   position: fixed;
   background-color: #008cff;
   color: white;
+  top: 0px;
 }
 
 nav {
@@ -38,5 +44,20 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 50%;
+  opacity: 25%;
+}
+#tab1 {
+  opacity: 100%;
+}
+
+.screen {
+  width: 100vw;
+}
+#screen1 {
+}
+#screen2 {
+  display: none;
+}
+#screen3 {
+  display: none;
 }
