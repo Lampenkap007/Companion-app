@@ -54,10 +54,46 @@ nav {
   width: 100vw;
 }
 #screen1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.no_content {
+  text-align: center;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #screen2 {
-  display: none;
+  visibility: hidden;
+  position: absolute;
 }
 #screen3 {
-  display: none;
+  visibility: hidden;
+  position: absolute;
+}
+
+/* Rules for Cards */
+.card {
+  padding: 10px;
+  width: 90vw;
+  height: 150px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-direction: column;
+}
+.editDelete {
+  display: flex;
+  justify-content: space-between;
+  bottom: 0px;
+  font-size: 25px;
 }
