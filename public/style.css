@@ -59,6 +59,7 @@ nav {
   align-items: center;
   flex-direction: column;
   position: absolute;
+  visibility: visible;
 }
 
 .no_content {
@@ -72,6 +73,12 @@ nav {
 #screen2 {
   visibility: hidden;
   position: absolute;
+  width: auto;
+  margin: 12px;
+}
+#formDescription {
+  width: 60vw;
+  height: 80px;
 }
 #screen3 {
   visibility: hidden;

@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/67dcf3289a.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <title>Companion-app</title>
-  </head>
-  <header class="header"><h1 id="title">To-Do List</h1></header>
-  <body>
-    <!-- screens -->
-    <div class="screen" id="screen1">
-      <div class="card">
-        <div>   
-        <h1 id="cardTitle">Title</h1>
-        <h3 id="cardDeadline">Deadline</h3>
-        <p id="cardDescription">Description</p></div>
-        <div class="editDelete"><i class="fas fa-edit"></i><i class="far fa-trash-alt"></i></div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://kit.fontawesome.com/67dcf3289a.js" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+      <title>Companion-app</title>
+   </head>
+   <header class="header">
+      <h1 id="title">To-Do List</h1>
+   </header>
+   <body>
+      <!-- screens -->
+      <div class="screen" id="screen1">
+      
+         <div class="no_content" id="noContent"><h2>Nothing To Do? </h2><p>Add items by tapping the + button.</p> </div>
       </div>
-      <!-- <div class="no_content"><h2>Nothing To Do? </h2><p>Add items by tapping the + button.</p> </div> -->
-    </div>
-    <div class="screen" id="screen2">Scherm2</div>
-    <div class="screen" id="screen3">Scherm3</div>
-  </body>
+      <div class="screen" id="screen2">
+         <label for="formTitle">
+            <h1>Title:</h1>
+         </label>
+         <input type="text" id="formTitle" name="formTitle" autocomplete="off">
+         <label for="formDeadline"><h3>Deadline: </h3></label>
+         <input type="date" id="formDeadline" name="formDeadline">
+         <label for="formDescription">
+          <h3>Description:</h3>
+       </label>
+       <textarea id="formDescription" name="formDescription" rows="4" cols="50"></textarea>
+       <h1 onclick="saveForm()"><i class="fas fa-save"></i></h1>
+      </div>
 
-  <!-- navigation -->
-  <nav>
-    <div class="tabs">
-      <a onclick="tab1()" id="tab1" class="tab"><i class="fas fa-tasks"></i></a>
-      <a onclick="tab2()" id="tab2" class="tab"><i class="fas fa-plus-circle"></i></a>
-      <a onclick="tab3()" id="tab3" class="tab"><i class="fas fa-cog"></i></a>
-    </div>
-  </nav>
+      <div class="screen" id="screen3">Scherm3</div>
+   </body>
+   <!-- navigation -->
+   <nav>
+      <div class="tabs">
+         <a onclick="tab1()" id="tab1" class="tab"><i class="fas fa-tasks"></i></a>
+         <a onclick="tab2()" id="tab2" class="tab"><i class="fas fa-plus-circle"></i></a>
+         <a onclick="tab3()" id="tab3" class="tab"><i class="fas fa-cog"></i></a>
+      </div>
+   </nav>
 </html>
+
+
+
+<!-- <div class="card">
+            <div>
+               <h1 id="cardTitle">Title</h1>
+               <h3 id="cardDeadline">Deadline</h3>
+               <p id="cardDescription">Description</p>
+            </div>
+            <div class="editDelete"><i class="fas fa-edit"></i><i class="far fa-trash-alt"></i></div>
+         </div> -->
